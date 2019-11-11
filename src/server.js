@@ -1,14 +1,22 @@
 require('dotenv').config()
 import express from "express";
+//import cors from 'cors';
 import session from 'express-session';
 import parser from 'body-parser';
 import morgan   from 'morgan';
-import mongodb from  './database/mongodb/dbMongo';
-import router_ from './Routers/index';
-//import cors from 'cors';
-const app = express();
+//Connection mongodb
+/*import mongodb from  './database/mongodb/dbMongo';
 const url_mongo = process.env.DB_MONGO
-mongodb(url_mongo)
+mongodb(url_mongo)*/
+//conecction mysql
+import './database/mysql/db_mysql';
+
+
+
+//Routers import 
+import router_ from './Routers/index';
+
+const app = express();
 
 
 app.use(morgan("dev"));

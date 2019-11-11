@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel src --out-dir lib",    
+    "babel": "babel src --out-dir lib",
     "dev2": "cross-env NODE_ENV=developend nodemon.cmd --exec babel-node src/server.js"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "@babel/cli": "^7.7.0",
     "axios": "^0.19.0",
     "bcrypt": "^3.0.6",
+    "bluebird": "^3.7.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
